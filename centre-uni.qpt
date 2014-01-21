@@ -1,0 +1,148 @@
+<Composer title="Composer 2" visible="1">
+ <ComposerLegend symbolWidth="7" title="" boxSpace="2" titleFont="Ubuntu,16,-1,5,50,0,0,0,0,0" map="0" groupFont="Ubuntu,14,-1,5,50,0,0,0,0,0" layerFont="Ubuntu,10,-1,5,75,1,0,0,0,0" groupSpace="2" symbolSpace="2" symbolHeight="3" layerSpace="2" iconLabelSpace="2" wrapChar="" itemFont="Ubuntu,8,-1,5,75,1,0,0,0,0">
+  <Model autoUpdate="1">
+   <LayerItem layerId="Uni_buildings20121210102204890" text="Uni-buildings">
+    <VectorClassificationItemNg text="">
+     <symbols>
+      <symbol outputUnit="MM" alpha="0.490196" type="fill" name="classificationSymbol">
+       <layer pass="0" class="SimpleFill" locked="0">
+        <prop k="color" v="85,170,0,125"/>
+        <prop k="color_border" v="0,0,0,125"/>
+        <prop k="offset" v="0,0"/>
+        <prop k="style" v="no"/>
+        <prop k="style_border" v="solid"/>
+        <prop k="width_border" v="0.3"/>
+       </layer>
+       <layer pass="0" class="SimpleFill" locked="0">
+        <prop k="color" v="255,0,0,125"/>
+        <prop k="color_border" v="0,0,0,125"/>
+        <prop k="offset" v="0,0"/>
+        <prop k="style" v="no"/>
+        <prop k="style_border" v="solid"/>
+        <prop k="width_border" v="0.01"/>
+       </layer>
+      </symbol>
+     </symbols>
+    </VectorClassificationItemNg>
+   </LayerItem>
+   <LayerItem layerId="oas_uni_dominated20121210104321631" text="Uni-dominated-OAs">
+    <VectorClassificationItemNg text="">
+     <symbols>
+      <symbol outputUnit="MM" alpha="0.490196" type="fill" name="classificationSymbol">
+       <layer pass="0" class="SimpleFill" locked="0">
+        <prop k="color" v="0,0,0,125"/>
+        <prop k="color_border" v="0,0,0,125"/>
+        <prop k="offset" v="0,0"/>
+        <prop k="style" v="no"/>
+        <prop k="style_border" v="solid"/>
+        <prop k="width_border" v="1"/>
+       </layer>
+      </symbol>
+     </symbols>
+    </VectorClassificationItemNg>
+   </LayerItem>
+   <LayerItem layerId="oas20121208135518120" text="Employees">
+    <VectorClassificationItemNg text="5000+">
+     <symbols>
+      <symbol outputUnit="MM" alpha="0.6" type="fill" name="classificationSymbol">
+       <layer pass="0" class="SimpleFill" locked="0">
+        <prop k="color" v="198,130,115,153"/>
+        <prop k="color_border" v="0,0,0,153"/>
+        <prop k="offset" v="0,0"/>
+        <prop k="style" v="solid"/>
+        <prop k="style_border" v="no"/>
+        <prop k="width_border" v="0.26"/>
+       </layer>
+      </symbol>
+     </symbols>
+    </VectorClassificationItemNg>
+    <VectorClassificationItemNg text="0 - 50">
+     <symbols>
+      <symbol outputUnit="MM" alpha="0.6" type="fill" name="classificationSymbol">
+       <layer pass="0" class="SimpleFill" locked="0">
+        <prop k="color" v="247,251,255,153"/>
+        <prop k="color_border" v="0,0,0,153"/>
+        <prop k="offset" v="0,0"/>
+        <prop k="style" v="solid"/>
+        <prop k="style_border" v="no"/>
+        <prop k="width_border" v="0.26"/>
+       </layer>
+      </symbol>
+     </symbols>
+    </VectorClassificationItemNg>
+    <VectorClassificationItemNg text="51 - 200">
+     <symbols>
+      <symbol outputUnit="MM" alpha="0.6" type="fill" name="classificationSymbol">
+       <layer pass="0" class="SimpleFill" locked="0">
+        <prop k="color" v="199,220,239,153"/>
+        <prop k="color_border" v="0,0,0,153"/>
+        <prop k="offset" v="0,0"/>
+        <prop k="style" v="solid"/>
+        <prop k="style_border" v="no"/>
+        <prop k="width_border" v="0.26"/>
+       </layer>
+      </symbol>
+     </symbols>
+    </VectorClassificationItemNg>
+    <VectorClassificationItemNg text="201 -500">
+     <symbols>
+      <symbol outputUnit="MM" alpha="0.6" type="fill" name="classificationSymbol">
+       <layer pass="0" class="SimpleFill" locked="0">
+        <prop k="color" v="114,178,215,153"/>
+        <prop k="color_border" v="0,0,0,153"/>
+        <prop k="offset" v="0,0"/>
+        <prop k="style" v="solid"/>
+        <prop k="style_border" v="no"/>
+        <prop k="width_border" v="0.26"/>
+       </layer>
+      </symbol>
+     </symbols>
+    </VectorClassificationItemNg>
+    <VectorClassificationItemNg text="501 - 1000">
+     <symbols>
+      <symbol outputUnit="MM" alpha="0.6" type="fill" name="classificationSymbol">
+       <layer pass="0" class="SimpleFill" locked="0">
+        <prop k="color" v="40,120,184,153"/>
+        <prop k="color_border" v="0,0,0,153"/>
+        <prop k="offset" v="0,0"/>
+        <prop k="style" v="solid"/>
+        <prop k="style_border" v="no"/>
+        <prop k="width_border" v="0.26"/>
+       </layer>
+      </symbol>
+     </symbols>
+    </VectorClassificationItemNg>
+    <VectorClassificationItemNg text="1001 - 15000">
+     <symbols>
+      <symbol outputUnit="MM" alpha="0.6" type="fill" name="classificationSymbol">
+       <layer pass="0" class="SimpleFill" locked="0">
+        <prop k="color" v="8,48,107,153"/>
+        <prop k="color_border" v="0,0,0,153"/>
+        <prop k="offset" v="0,0"/>
+        <prop k="style" v="solid"/>
+        <prop k="style_border" v="no"/>
+        <prop k="width_border" v="0.26"/>
+       </layer>
+      </symbol>
+     </symbols>
+    </VectorClassificationItemNg>
+   </LayerItem>
+  </Model>
+  <ComposerItem width="36" x="168.18" y="3.38051" rotation="0" height="74.4" frame="true" outlineWidth="0.3" zValue="2" lastValidViewScaleFactor="3.54976" id="" positionLock="false">
+   <FrameColor alpha="255" red="0" blue="0" green="0"/>
+   <BackgroundColor alpha="209" red="255" blue="255" green="255"/>
+  </ComposerItem>
+ </ComposerLegend>
+ <ComposerMap keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+  <Extent ymin="7.05313e+06" xmin="-167445" ymax="7.05544e+06" xmax="-164120"/>
+  <LayerSet/>
+  <Grid gridStyle="0" crossLength="3" penColorRed="0" penColorBlue="0" intervalX="0" offsetX="0" intervalY="0" offsetY="0" show="0" penWidth="0" penColorGreen="0">
+   <Annotation direction="0" precision="3" position="1" frameDistance="1" show="0" font="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+  </Grid>
+  <ComposerItem width="205" x="1" y="2" rotation="0" height="142" frame="true" outlineWidth="0.3" zValue="1" lastValidViewScaleFactor="3.54976" id="" positionLock="false">
+   <FrameColor alpha="255" red="0" blue="0" green="0"/>
+   <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+  </ComposerItem>
+ </ComposerMap>
+ <Composition printResolution="300" paperWidth="210" snapGridOffsetX="0" snapGridResolution="0" snapGridOffsetY="0" snapping="0" paperHeight="148" printAsRaster="0"/>
+</Composer>
