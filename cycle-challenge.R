@@ -18,7 +18,7 @@ shef.oas <- readOGR(".", "oas")
 plot(shef.oas)
 ### Tidy up, remove massive datasets
 rm(allflow, alloas, origin)
-save.image("input.RData")
+# save.image("input.RData")
 
 ### Prepare and run lines plot - this works!
 load("input.RData")
@@ -51,7 +51,10 @@ to.unic$lwd[which(to.unic$n > 6)] <- 2
 to.unic$n[which(to.unic$n > 6)]
 
 plot(shef.oas, col = "White", border="Black")
-for(i in 1:nrow(to.unic)){
+
+iis <- order(to.unic$n)
+
+for(i in iis){
   to.unic$dis[i] <- sqrt((o$x[which(o$zc == to.unic$from[i])] - c[4,1])^2 + (o$y[which(o$zc == to.unic$from[i])]- c[4,2])^2 )
   lines(c(o$x[which(o$zc == to.unic$from[i])], c[4,1]),
         c(o$y[which(o$zc == to.unic$from[i])], c[4,2]),
@@ -80,4 +83,28 @@ h + geom_histogram()
 l <- which(to.unic$from %in% shef.oas$ZONE_CODE)
 length(l) - nrow(to.unic)
 
+# Sheffield cycling circuity
+download.file("https://github.com/npct/pct-data/raw/master/Sheffield/rf.Rds", "rf.Rds", mode = "wb")
+download.file("https://github.com/npct/pct-data/raw/master/Sheffield/rq.Rds", "rq.Rds", mode = "wb")
+download.file("https://github.com/npct/pct-data/raw/master/Sheffield/l.Rds", "l.Rds", mode = "wb")
 
+
+rf <- readRDS("rf.Rds")
+l <- readRDS("l.Rds")
+
+names(l)
+
+library(dplyr)
+df <- l@data[c("dist", "dist_fast",     "dist_quiet")]
+names(df) <- c("Euclidean distance (km)", "'Fastest' route distance", "'Quietest' route distance")
+df[2:3] <- df[2:3] * 1000
+
+plot(df)
+abline(v = 2)
+cor(l@data[c("dist", "dist_fast",     "dist_quiet")])
+
+pairs(df, panel= function(x,y,...){
+  points(x,y);
+  abline(coef = c(0,1))})
+
+summary(df[2] / df[1])
